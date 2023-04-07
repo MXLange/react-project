@@ -27,6 +27,7 @@ const RegisterPage = () => {
     const { register, reset, handleSubmit, watch, formState: { errors } } = useForm({
         resolver: yupResolver(schema)
     });
+    
 
     function postForm(data) {
 
@@ -37,6 +38,7 @@ const RegisterPage = () => {
         }
 
         reset();
+        
         alert("Sent req");
         return navigate("/login");
         // Axios.post("http://localhost:8080/register", JSON.stringify(toSend), { headers: {
