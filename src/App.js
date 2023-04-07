@@ -6,13 +6,11 @@ import { BrowserRouter, Route, Routes, HashRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <HashRouter>
       <Routes>
         <Route path='/login' element={<LoginPage />} />
         <Route path='/register' element={<RegisterPage />} />
         <Route path='/' element={<HomePage />} />
       </Routes>
-    </HashRouter>
   );
 }
 

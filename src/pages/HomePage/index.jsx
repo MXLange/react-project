@@ -9,6 +9,8 @@ const HomePage = () => {
     return(
         <div>
             <Header></Header>
+            <Link to={"/login"} className="link">Login</Link> <br/>
+            <Link to={"/register"} className="link">Register</Link>
             <Footer></Footer>
         </div>
     );
