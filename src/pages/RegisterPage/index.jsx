@@ -37,6 +37,8 @@ const RegisterPage = () => {
         }
 
         alert("Sent req");
+        reset();
+        return navigate("/login");
         // Axios.post("http://localhost:8080/register", JSON.stringify(toSend), { headers: {
         //     "Content-Type": "application/json"}
         // }).then( res => {
