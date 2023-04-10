@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./registerStyle.css"
 import { queryByTestId } from "@testing-library/react";
 
-    const schema = yup.object({
+    const userSchema = yup.object({
         name: yup.string().required(" is required").min(3," must have at least 3 characteres."),
         lastName: yup.string().required(" is required").min(3," must have at least 3 characteres."),
         email: yup.string().required(" is required").matches(/\S+@\S+\.\S+/i, " - place a valid e-mail."),
@@ -25,7 +25,7 @@ const RegisterPage = () => {
     const [message, setMessage] = useState("");
 
     const { register, reset, handleSubmit, watch, formState: { errors } } = useForm({
-        resolver: yupResolver(schema)
+        resolver: yupResolver(userSchema)
     });
     
 
@@ -39,25 +39,24 @@ const RegisterPage = () => {
 
         reset();
         
-        alert("Sent req");
-        return navigate("/login");
-        // Axios.post("http://localhost:8080/register", JSON.stringify(toSend), { headers: {
-        //     "Content-Type": "application/json"}
-        // }).then( res => {
-        //     if(res.data === "New user registered") {
-        //         alert("Confirm your email and Sign in!");
-        //         return navigate("/login");
-        //     } else if(res.data === "User already exists") {
-        //         reset();
-        //         alert("User already exists, try to Sign in or try a diferent e-mail!");
-        //     }
-        // }).catch(e => {
-        //     console.log(e.message)
-        // });
+        // alert("Sent req");
+        // return navigate("/login");
+        Axios.post("http://localhost:8080/register", JSON.stringify(toSend), { headers: {
+            "Content-Type": "application/json"}
+        }).then( res => {
+            if(res.data === "New user registered") {
+                alert("Confirm your email and Sign in!");
+                return navigate("/login");
+            } else if(res.data === "User already exists") {
+                reset();
+                alert("User already exists, try to Sign in or try a diferent e-mail!");
+            }
+        }).catch(e => {
+            console.log(e.message)
+        });
     }
 
     const onSubmit = (data) => {
-        console.log(data);
         if(data.password != data.confirmPassword) {
             setMessage(" (Password doesn't match)");
             return;

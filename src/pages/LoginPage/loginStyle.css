@@ -1,5 +1,5 @@
 #login {
-    background-color: yellow;
+    background-color: lightgray;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -13,5 +13,13 @@
     padding: 7px;
     border: 0.1rem solid black;
     box-shadow: 10px 20px black;
+}
+
+#submit-button__login {
+    margin-top: 0.7rem;
+}
+
+#login span {
+    color: red;
 }
 

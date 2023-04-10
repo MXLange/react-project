@@ -1,0 +1,51 @@
+
+header {
+    width: 100%;
+    background-color: rgb(63, 22, 139);
+    color: azure; 
+}
+
+#header-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.05rem 2rem;
+    box-shadow: 0 0 15rem black;
+}
+
+#header-content button {
+    padding: 0.3rem;
+    width: 5rem;
+    border-radius: 0.4rem;
+    border-color: rgba(63, 22, 139, 1);
+    margin-top: 0.5rem;
+    margin-left: 2.5rem;
+    float: right;
+}
+
+#header-content button:hover {
+    transition: 0.2s linear;
+    background-color: rgba(63, 22, 139, 1);
+
+}
+
+#header-content a {
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: azure;
+    list-style: none;
+    text-decoration: none;
+}
+
+#header-content a:hover {
+    color: black;
+}
+
+@media screen and (max-width: 420px) {
+    #header-content {
+        padding: 0.5rem 1rem;
+    }
+    #header-content a {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+}
