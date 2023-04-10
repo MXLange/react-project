@@ -60,6 +60,8 @@ const RegisterPage = () => {
         if(data.password != data.confirmPassword) {
             setMessage(" (Password doesn't match)");
             return;
+        } else {
+            setMessage("");
         }
         postForm(data);
     }
