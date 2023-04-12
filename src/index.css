@@ -8,3 +8,7 @@
     letter-spacing: 1px;
 }
 
+:root {
+    --light-violet-color: rgb(70, 30, 160);
+    --light-black-color: #545c5f;
+}

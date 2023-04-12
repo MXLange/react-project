@@ -52,7 +52,7 @@ const LoginPage = () => {
                 <label htmlFor="password" id="form__password">Password</label>
                 <span>{errors?.password?.message}</span>
                 <input type="password" className="form-control" {...register("password")} />
-                <button className="btn btn-primary" id="submit-button__login" type="submit">Sign in</button>
+                <button id="login-button" type="submit">Sign in</button>
             </form>
             <Link to={"/register"} className="link">Register</Link>
         </div>

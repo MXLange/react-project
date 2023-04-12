@@ -1,0 +1,18 @@
+
+
+#todo-list {
+    margin-top: 7rem;
+}
+
+#todo-list h1 {
+    font-size: 4rem;
+    color: var(--light-violet-color);
+    text-align: center;
+
+}
+
+@media screen and (max-width: 410px) {
+    #todo-list {
+        margin-top: 10rem;
+    }
+}

@@ -81,7 +81,7 @@ const RegisterPage = () => {
                     <input type="text" className="form-control" {...register("lastName")} />
                 </div>
                 <div id="email">
-                    <label htmlFor="email" id="form__login" >Login</label>
+                    <label htmlFor="email" id="form__login" >Email</label>
                     <span className="error">{errors?.email?.message}</span>
                     <input type="email" className="form-control" {...register("email")}/>
                 </div>
@@ -95,7 +95,7 @@ const RegisterPage = () => {
                     <input id="confirmPassword" type="password" className="form-control" placeholder="Confirm your password" {...register("confirmPassword")} />
                     <p className="password-policy">"Your password must have at least 8 characteres, one digit, one uppercase letter, one lowercase letter, one special character(@$!%*#?&)"</p>
                 </div>
-                <button className="btn btn-primary" id="submit-button" type="submit">Register</button>
+                <button id="register-button">Register</button>
             </form>
             <Link to={"/login"} className="link">Login</Link>
         </div>
