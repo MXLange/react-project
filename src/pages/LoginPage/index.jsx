@@ -38,7 +38,7 @@ const LoginPage = () => {
             localStorage.setItem("user", JSON.stringify(res.data));
             navigate("/")
         }).catch(e => {
-            console.log(e.message)
+            alert("Unavailable service, try again latter.");
         });
     }
 

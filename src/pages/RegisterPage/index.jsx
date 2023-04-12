@@ -52,7 +52,7 @@ const RegisterPage = () => {
                 alert("User already exists, try to Sign in or try a diferent e-mail!");
             }
         }).catch(e => {
-            console.log(e.message)
+            alert("Unavailable service, try again latter.");
         });
     }
 
