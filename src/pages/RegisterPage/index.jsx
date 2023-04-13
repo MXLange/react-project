@@ -41,7 +41,7 @@ const RegisterPage = () => {
         
         // alert("Sent req");
         // return navigate("/login");
-        Axios.post("http://localhost:8080/register", JSON.stringify(toSend), { headers: {
+        Axios.post("ec2-18-231-150-245.sa-east-1.compute.amazonaws.com:8080", JSON.stringify(toSend), { headers: {
             "Content-Type": "application/json"}
         }).then( res => {
             if(res.data === "New user registered") {
