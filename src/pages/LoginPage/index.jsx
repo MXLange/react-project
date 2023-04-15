@@ -2,7 +2,6 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import "./loginStyle.css"
 import { useNavigate, Link } from 'react-router-dom';
 import Axios from "axios";

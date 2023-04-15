@@ -1,9 +1,9 @@
 
 import React from "react";
-import "./tasksStyle.css";
+import "./appsStyle.css";
 import { Link, useNavigate } from "react-router-dom";
 
-const Tasks = () => {
+const Apps = () => {
 
 
     const navigate = useNavigate();
@@ -27,4 +27,4 @@ const Tasks = () => {
     );
 }
 
-export default Tasks;
+export default Apps;

@@ -30,7 +30,7 @@ const Header = () => {
                 <div className="header-link">
                     <ul>
                         <Link to={"/"} >Home  </Link>
-                        <Link to={"/tasks"} >App</Link>
+                        <Link to={"/apps"} >App</Link>
                     </ul>
                 </div>
                 <div className="header-button">
