@@ -104,6 +104,36 @@ input, textarea {
     list-style-type: none;
 }
 
+#task-div-buttons {
+    display: flex;
+}
+
+#edit-task, #delete-task {
+    margin: 1rem;
+}
+
+#edit-screen {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+}
+
+#edit-screen-content {
+    padding: 2rem;
+    background-color: lightgray;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @media screen and (max-width: 1001px) {
     #todo-list {
         display: grid;
@@ -118,6 +148,16 @@ input, textarea {
         padding-left: 0.5rem;
         width: 100%;
     }
+
+}
+
+@media screen and (max-width: 581px) {
+    #edit-screen-content {
+        width: 100%;
+    }
+    #edit-screen {
+        width: 100%;
+    }    
 }
 
 
