@@ -26,10 +26,8 @@ const InterestCalc = () => {
         for(let i = 1; i <= data.invLength; i++) {
             if(i === 1) {
                 result += (data.initInvest * (1 + data.rate / 100)) + data.monthContrib;
-                console.log(i);
             } else {
                 result = (result * (1 + data.rate / 100)) + data.monthContrib;
-                console.log(i);
             }
         }
         result.toFixed(2);
