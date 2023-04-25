@@ -8,20 +8,28 @@ const Apps = () => {
 
     const navigate = useNavigate();
 
-    function teste() {
+    function toDoList() {
         navigate("/to-do-list");
+    }
+
+    function interestCalc() {
+        navigate("/interest-calc");
     }
 
     return(
         <div id="tasks">
             <h1>Apps:</h1>
-            <div onClick={teste}>
-                <p id="task-p1">TO DO LIST</p>
-                <p id="task-p2">App to create a list of tasks.</p>
+            <div onClick={toDoList}>
+                <p className="task-p1">TO DO LIST</p>
+                <p className="task-p2">App to create a list of tasks.</p>
+            </div>
+            <div onClick={interestCalc}>
+                <p className="task-p1" id="interest-calc">INTEREST CALCULATOR</p>
+                <p className="task-p2" id="interest-calc-detail">Calculate your investments profitability</p>
             </div>
             <div>
-                <p id="task-p1">COMMING SOON</p>
-                <p id="task-p2">...</p>
+                <p className="task-p1">COMMING SOON</p>
+                <p className="task-p2">...</p>
             </div>
         </div>
     );

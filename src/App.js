@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import { Route, Routes } from 'react-router-dom';
 import TodoList from "./pages/TodoList";
 import Apps from "./pages/Apps";
+import InterestCalc from "./pages/InterestCalculator";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path='/' element={<HomePage />} />
       <Route path='/apps' element={< Apps/>} />
       <Route path='/to-do-list' element={<TodoList />} />
+      <Route path="/interest-calc" element={<InterestCalc />} />
     </Routes>
   );
 }

@@ -1,10 +1,10 @@
-#login {
+#interest-calculator {
     background-color: lightgray;
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    height: 18rem;
+    transform: translate(-80%, -50%);
+    height: 31rem;
     width: 20rem;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
     box-shadow: 10px 20px var(--black-shadow);
 }
 
-#login-button {
+.calc-button {
     background-color: var(--light-violet-color);
     color: azure;
     font-size: 1.2rem;
@@ -25,7 +25,36 @@
     margin-top: 0.7rem;
 }
 
-#login span {
-    color: red;
+.result {
+    width: 100%;
+    word-wrap: break-word;
 }
 
+.result p {
+    font-size: 1.5rem;
+}
+
+#currency-label {
+    margin-right: 1rem;
+}
+
+#currency {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+}
+
+select {
+    height: 2.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+input {
+    border-radius: 0.5rem;
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+form {
+    margin-bottom: 0.5rem;
+}
