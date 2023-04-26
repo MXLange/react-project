@@ -82,6 +82,15 @@
     #tasks div {
         width: 20rem;
     }
+    #tasks #interest-calc {
+        font-size: 0.7rem;
+        padding: 0.1rem 0 0 0;
+    }
+    #tasks #interest-calc-detail {
+        font-size: 0.6rem;
+        margin-left: 0;
+        margin-top: 0.6rem;
+    }
 }
 
 @media screen and (max-width: 391px) {
