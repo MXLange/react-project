@@ -4,7 +4,7 @@ import "./homeStyle.css"
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 
 const HomePage = () => {
-    return(
+    return (
         <div id="home">
             <div className="first">
                 <h2><span>Murillo</span> Lange</h2>
@@ -14,11 +14,15 @@ const HomePage = () => {
             </div>
             <div className="second">
                 <h2>Stack</h2>
-                <p className="description">Java - SpringBoot, Maven, Hibernate, JPA, JDBC</p> <br />
-                <p className="description">Front-end - React.js, JavaScript, HTML, CSS, Angular</p> <br />
-                <p className="description">Database – MySQL, PostgreSQL, H2</p> <br />
-                <p className="description">Version Control - Git, GitHub</p> <br />
-                <p className="description">API Rest, CRUD</p> <br />
+                <p className="description">JavaScript/TypeScript – Node, Prisma.io, JWT, Express</p> <br />
+                <p className="description">Front End – JavaScript, TypeScript, HTML, CSS, Bootstrap, Next.js, React.js</p> <br />
+                <p className="description">Database – MySQL, PostgreSQL</p> <br />
+                <p className="description">Code Versioning - Git, GitHub</p> <br />
+                <p className="description">Containers – Docker</p> <br />
+                <p className="description">Other programming languages:</p> <br />
+                <p className="description"> Java - SpringBoot, Maven, Hibernate, JPA, JDBC</p> <br />
+                <p className="description"> C/C++ - Fundamentals of programming, algorithms, memory management</p> <br />
+                <p className="description"> PHP – Laravel (Basic)</p> <br />
 
             </div>
         </div>
